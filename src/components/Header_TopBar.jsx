@@ -38,7 +38,9 @@ function TopBar(){
       </style>
       <div className = 'topBarContent'>
         <h3>Subjects</h3>
-        <input type='text' placeholder='Search'/>
+        <div className='search input-group'>
+          <input type='text' placeholder='Search'/>
+        </div>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Khan_Academy_logo.svg/2000px-Khan_Academy_logo.svg.png" height='60px'/>
         <Links/>
       </div>
