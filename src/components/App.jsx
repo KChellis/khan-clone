@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import NavBar from './NavBar';
-// import TopicList from './TopicList';
+import SubjectList from './SubjectList';
 // import { Switch, Route } from 'react-router-dom';
 
 function App(){
@@ -9,6 +9,7 @@ function App(){
     <div>
       <Header/>
       <NavBar/>
+      <SubjectList/>
     </div>
   );
 }

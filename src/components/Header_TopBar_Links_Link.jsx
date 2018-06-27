@@ -12,12 +12,12 @@ function Link(props){
       </style>
       <h5>{props.name}</h5>
     </div>
-  )
+  );
 }
 
 Link.propTypes = {
   name: PropTypes.string,
   path: PropTypes.string
-}
+};
 
 export default Link;
