@@ -7,6 +7,8 @@ function Lessons(props){
     <div className='lessons'>
       <style jsx>{`
           .lessons {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
           }
       `}</style>
       {

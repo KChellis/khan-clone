@@ -5,6 +5,8 @@ function Lesson(props){
   return (
     <div className='lesson'>
       <style jsx>{`
+        .lesson{
+      }
       `}
       </style>
       <p>{props.lesson}</p>
