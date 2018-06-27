@@ -5,12 +5,14 @@ function Course(props){
   return (
     <div className='course'>
       <style jsx>{`
-        .course{
-      }
+        img{
+          width: 250px;
+          margin: 10px;
+        }
       `}
       </style>
       <img src={props.icon}/>
-      <p>{props.name}</p>
+      <p><strong>{props.name}</strong></p>
     </div>
   );
 }

@@ -9,6 +9,10 @@ function Lessons(props){
           .lessons {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+            line-height: 10px;
+            justify-content: space-around;
+            margin-right: -500;
+
           }
       `}</style>
       {

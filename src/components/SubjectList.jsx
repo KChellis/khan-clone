@@ -48,7 +48,8 @@ function SubjectList(){
     <div className='subjectList'>
       <style jsx>{`
           .subjectList {
-
+            font-family: helvetica;
+            margin: 20px;
           }
        `}
       </style>

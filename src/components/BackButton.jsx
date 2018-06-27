@@ -7,13 +7,13 @@ function BackButton(){
     <div className='backButton'>
       <style jsx>{`
         .backButton {
-          display: flex;
-          justify-content: space-around;
           background-color: #F6F7F7;
+          height: 40px;
+          padding-top: 15px;
         }
        `}
       </style>
-      <Link to='/'>Back to Home</Link>
+      <Link to='/'>Back to math by subject</Link>
     </div>
   );
 }

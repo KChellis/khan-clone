@@ -10,22 +10,23 @@ function Subject(props){
         <style jsx>{`
             .subject {
               float: left;
-              width: 20%;
+              width: 25%;
               display: grid;
-              grid-template-columns: .5fr 1fr;
+              grid-template-columns: .25fr 1fr;
             }
             .icon {
               border-radius: 50%;
-              width: 75px;
+              width: 50px;
             }
         `}</style>
-      <img className="icon" src={props.icon}/>
-      <h3>{props.name}</h3>
+        <img className="icon" src={props.icon}/>
+        <h4>{props.name}</h4>
       </div>
       <div className='lessons'>
         <style jsx>{`
             .lessons {
-              width: 79%;
+              width: 74%;
+              justify-content: space-around;
             }
         `}</style>
         <Lessons lessons={props.lessons}/>

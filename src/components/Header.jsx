@@ -11,6 +11,7 @@ function Header(){
             height: 525px;
             background-size: cover;
             color: white;
+            font-family: helvetica;
           }
        `}
       </style>

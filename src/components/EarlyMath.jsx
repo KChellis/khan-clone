@@ -8,7 +8,7 @@ function EarlyMath(){
       <BackButton/>
       <CourseList/>
     </div>
-  )
+  );
 }
 
 export default EarlyMath;

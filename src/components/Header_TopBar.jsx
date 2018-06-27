@@ -1,22 +1,48 @@
 import React from 'react';
-import SubjectDrop from './Header_TopBar_SubjectDrop';
-import Search from './Header_TopBar_Search';
 import Links from './Header_TopBar_Links';
 
 function TopBar(){
   return(
-    <div className = 'topBar'>
+    <div className='topBar'>
+
       <style jsx>{`
-          .topBar {
+          .topBarContent {
             display: flex;
             justify-content: space-around;
           }
-       `}
+          .topBar:hover {
+            background-color: white;
+            color: black;
+          }
+          input {
+            margin-top:13px;
+            height: 40px;
+            width: 200px;
+            background-color: rgb(255,255,255, .25);
+            border: none;
+            border-radius: 5%;
+            font-size: 16px;
+
+          }
+          ::placeholder {
+            color: white;
+            padding-left: 5px;
+          }
+          .topBar:hover input{
+            background-color: LightGrey;
+          }
+          .topBar:hover input::placeholder{
+            color: black;
+          }
+          `}
       </style>
-      <SubjectDrop/>
-      <Search/>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Khan_Academy_logo.svg/2000px-Khan_Academy_logo.svg.png" height='60px'/>
-      <Links/>
+      <div className = 'topBarContent'>
+        <h3>Subjects</h3>
+        <input type='text' placeholder='Search'/>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Khan_Academy_logo.svg/2000px-Khan_Academy_logo.svg.png" height='60px'/>
+        <Links/>
+      </div>
+      <hr/>
     </div>
   );
 }

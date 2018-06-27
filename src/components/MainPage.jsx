@@ -8,7 +8,7 @@ function MainPage(){
       <NavBar/>
       <SubjectList/>
     </div>
-  )
+  );
 }
 
 export default MainPage;

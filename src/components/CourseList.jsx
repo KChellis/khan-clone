@@ -37,19 +37,24 @@ function CourseList(){
     }
   ];
   return(
-    <div className='courseList'>
-      <style jsx>{`
-          .courseList {
-
-          }
-       `}
-      </style>
-      <h4>What do you want to learn in Early math?</h4>
-      {courses.map((course, index) =>
-        <Course icon ={course.icon}
-          name={course.name}
-          key={index} />
-      )}
+    <div>
+      <div>
+        <h2>What do you want to learn in Early math?</h2>
+      </div>
+      <div className='courseList'>
+        <style jsx>{`
+            .courseList {
+              display: grid;
+              grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+         `}
+        </style>
+        {courses.map((course, index) =>
+          <Course icon ={course.icon}
+            name={course.name}
+            key={index} />
+        )}
+      </div>
     </div>
   );
 }
