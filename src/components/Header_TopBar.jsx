@@ -5,13 +5,20 @@ import Links from './Header_TopBar_Links';
 
 function TopBar(){
   return(
-    <div>
+    <div className = 'topBar'>
+      <style jsx>{`
+          .topBar {
+            display: flex;
+            justify-content: space-around;
+          }
+       `}
+      </style>
       <SubjectDrop/>
       <Search/>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Khan_Academy_logo.svg/2000px-Khan_Academy_logo.svg.png"/>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Khan_Academy_logo.svg/2000px-Khan_Academy_logo.svg.png" height='60px'/>
       <Links/>
     </div>
-  )
+  );
 }
 
 export default TopBar;

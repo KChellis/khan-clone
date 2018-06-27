@@ -5,7 +5,7 @@ function SubjectDrop(){
     <div>
       <h3>Subjects</h3>
     </div>
-  )
+  );
 }
 
 export default SubjectDrop;
